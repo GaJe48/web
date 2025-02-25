@@ -1,0 +1,78 @@
+*,
+html {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: cyan;
+}
+
+.navbar {
+    background-color: gray;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar li {
+    padding: 10px;
+    margin: 20px;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+}
+
+.navbar li:hover {
+    background-color: cyan;
+    transition: .2s ease-in-out;
+    border-radius: 10px;
+}
+
+.isi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.isi a {
+    display: contents;
+}
+
+.isi img {
+    width: 50%;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+#divGenerasi {
+    height: 2vh;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: black;
+}
+
+.bawah {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+}
