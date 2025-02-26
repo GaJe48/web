@@ -28,7 +28,7 @@
 
                         <div class="relative">
                             <input type="text" class="w-full rounded-lg border-gray-200 p-4 text-sm shadow-xs"
-                                placeholder="Enter username" id="usr" />
+                                placeholder="Enter username" id="usr" required />
 
                             <!-- <span class="absolute inset-y-0 end-0 grid place-content-center px-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="size-4 text-gray-400" fill="none"
@@ -45,7 +45,7 @@
 
                         <div class="relative">
                             <input type="password" class="w-full rounded-lg border-gray-200 p-4 text-sm shadow-xs"
-                                placeholder="Enter password" id="pw" />
+                                placeholder="Enter password" id="pw" required />
 
                             <!-- <span class="absolute inset-y-0 end-0 grid place-content-center px-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="size-4 text-gray-400" fill="none"
@@ -115,7 +115,10 @@
             after.classList.remove('hidden')
             localStorage.setItem('usr', usr.value)
 
-            if (usr.value == 'admin' && pw.value == 'admin123') {
+            if (usr.value == '' || pw.value == '') {
+                before.classList.toggle('hidden')
+                after.classList.toggle('hidden')
+            } else if (usr.value == 'admin' && pw.value == 'admin123') {
                 text.innerText = 'Anda Berhasil Login Sebagai Administrator'
             } else {
                 text.innerText = 'Anda Berhasil Login Sebagai User'
