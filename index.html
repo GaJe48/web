@@ -7,303 +7,372 @@
     <title>Tempat Gabut</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script src='//unpkg.com/@tailwindcss/browser@4'></script>
+    <style type="text/tailwindcss">
+        @custom-variant dark (&:where(.dark, .dark *));
+      </style>
 </head>
 
 <body>
-    <header class="bg-white drop-shadow-xl">
-        <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-            <div class="flex flex-col items-center gap-4 md:flex-row md:items-center md:justify-between">
-                <div class="flex flex-row">
-                    <img src="//static.wikia.nocookie.net/zenless-zone-zero/images/7/79/Avatar_Hoshimi_Miyabi.png"
-                        class="size-15 mr-4">
-                    <div>
-                        <h1 class="text-2xl font-bold text-gray-900 sm:text-3xl">Tempat Gabut</h1>
+    <div class="h-screen dark:bg-gray-800">
+        <div class="h-auto pb-10 dark:bg-gray-800">
+            <header class="bg-white drop-shadow-xl dark:bg-gray-900">
+                <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+                    <div class="flex flex-col items-center gap-4 md:flex-row md:items-center md:justify-between">
+                        <div class="flex flex-row">
+                            <img src="//static.wikia.nocookie.net/zenless-zone-zero/images/7/79/Avatar_Hoshimi_Miyabi.png"
+                                class="size-15 mr-4" onclick="darkMode()">
+                            <div>
+                                <h1 class="text-2xl font-bold text-gray-900 sm:text-3xl dark:text-white">Tempat Gabut
+                                </h1>
 
-                        <p class="mt-1.5 text-sm text-gray-500">
-                            Ngapain Ngoding, Mending Mancing.
+                                <p class="mt-1.5 text-sm text-gray-500 dark:text-gray-400">
+                                    Ngapain Ngoding, Mending Mancing.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <button
+                                class="inline-flex items-center justify-center gap-1.5 rounded-sm border border-gray-200 bg-white px-5 py-3 text-gray-900 transition hover:text-gray-700 focus:ring-3 focus:outline-hidden dark:border-gray-800 dark:bg-gray-900 dark:text-white dark:hover:text-gray-200"
+                                type="button">
+                                <span class="text-sm font-medium">
+                                    <a href="//github.com/GaJe48">Guthib Gw</a>
+                                </span>
+
+                                <img src="//upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/160px-GitHub_Invertocat_Logo.svg.png"
+                                    class="size-6">
+
+                                <!-- <svg xmlns="http://www.w3.org/2000/svg" class="size-4" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg> -->
+                            </button>
+
+                            <button
+                                class="inline-flex items-center justify-center gap-1.5 rounded-sm bg-indigo-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:ring-3 focus:outline-hidden"
+                                type="button">
+                                <a href="//facebook.com/groups/programmerhandal">Fesnuk IMPHEN</a>
+
+                                <img src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/50px-2023_Facebook_icon.svg.png"
+                                    class="size-6">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <span class="flex items-center mt-4">
+                <span class="h-px flex-1 bg-black dark:bg-white"></span>
+                <span class="shrink-0 px-6 dark:text-white">Barang Siapa, Barang Guweh</span>
+                <span class="h-px flex-1 bg-black dark:bg-white"></span>
+            </span>
+
+            <div class="flex flex-row flex-wrap gap-4 justify-center mt-4 ml-4 mr-4">
+                <article
+                    class="hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-xs hover:[animation-duration:_4s] grow dark:shadow-gray-700/25">
+                    <div class="rounded-[10px] bg-white p-4 !pt-20 sm:p-6 dark:bg-gray-900">
+                        <time datetime="2022-10-10" class="block text-xs text-gray-500 dark:text-gray-400"> Web
+                            Programming
+                            UNPAS </time>
+
+                        <h3 class="mt-0.5 text-lg font-medium text-gray-900 dark:text-white">
+                            <a href="//www.youtube.com/playlist?list=PLFIM0718LjIVuONHysfOK0ZtiqUWvrx4F">HTML Dasar - 13
+                                Part</a>
+                            </a>
+
+                            <div class="mt-4 flex flex-wrap gap-1">
+                                <span
+                                    class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-orange-600 dark:bg-yellow-600 dark:text-orange-100">
+                                    <a href="index1.html">Hasil</a>
+                                </span>
+
+                                <span
+                                    class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600 dark:bg-purple-600 dark:text-purple-100">
+                                    HTML
+                                </span>
+                            </div>
+                    </div>
+                </article>
+
+                <article
+                    class="hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-xs hover:[animation-duration:_4s] grow dark:shadow-gray-700/25">
+                    <div class="rounded-[10px] bg-white p-4 !pt-20 sm:p-6 dark:bg-gray-900">
+                        <time datetime="2022-10-10" class="block text-xs text-gray-500 dark:text-gray-400"> Dea Afrizal
+                        </time>
+
+                        <h3 class="mt-0.5 text-lg font-medium text-gray-900 dark:text-white">
+                            <a href="//www.youtube.com/watch?v=71a2zeC71gk&list=PLc6SEcJkQ6DzVY6THm3prtUU6HKMqpZSH">Sesi
+                                1 -
+                                Semester 1 Cuy University</a>
+                        </h3>
+
+                        <div class="mt-4 flex flex-wrap gap-1">
+                            <span
+                                class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-orange-600 dark:bg-yellow-600 dark:text-orange-100">
+                                <a href="index2.html">Hasil</a>
+                            </span>
+
+                            <span
+                                class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600 dark:bg-purple-600 dark:text-purple-100">
+                                HTML
+                            </span>
+
+                            <span
+                                class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600 dark:bg-purple-600 dark:text-purple-100">
+                                CSS
+                            </span>
+                        </div>
+                    </div>
+                </article>
+
+                <article
+                    class="hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-xs hover:[animation-duration:_4s] grow dark:shadow-gray-700/25">
+                    <div class="rounded-[10px] bg-white p-4 !pt-20 sm:p-6 dark:bg-gray-900">
+                        <time datetime="2022-10-10" class="block text-xs text-gray-500 dark:text-gray-400"> Dea Afrizal
+                        </time>
+
+                        <h3 class="mt-0.5 text-lg font-medium text-gray-900 dark:text-white">
+                            <a href="//www.youtube.com/watch?v=Mb6Np6QURDY&list=PLc6SEcJkQ6DzVY6THm3prtUU6HKMqpZSH">Sesi
+                                2 -
+                                Semester 1 Cuy University</a>
+                        </h3>
+
+                        <div class="mt-4 flex flex-wrap gap-1">
+                            <span
+                                class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600 dark:bg-purple-600 dark:text-purple-100">
+                                HTML
+                            </span>
+
+                            <span
+                                class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600 dark:bg-purple-600 dark:text-purple-100">
+                                CSS
+                            </span>
+
+                            <span
+                                class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600 dark:bg-purple-600 dark:text-purple-100">
+                                JavaScript
+                            </span>
+                        </div>
+                    </div>
+                </article>
+
+                <article
+                    class="hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-xs hover:[animation-duration:_4s] grow dark:shadow-gray-700/25">
+                    <div class="rounded-[10px] bg-white p-4 !pt-20 sm:p-6 dark:bg-gray-900">
+                        <time datetime="2022-10-10" class="block text-xs text-gray-500 dark:text-gray-400"> Dea Afrizal
+                        </time>
+
+                        <h3 class="mt-0.5 text-lg font-medium text-gray-900 dark:text-white">
+                            <a href="//www.youtube.com/watch?v=igwNyjc7Ii8&list=PLc6SEcJkQ6DzVY6THm3prtUU6HKMqpZSH">Sesi
+                                3 -
+                                Semester 1 Cuy University</a>
+                        </h3>
+
+                        <div class="mt-4 flex flex-wrap gap-1">
+                            <span
+                                class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-orange-600 dark:bg-yellow-600 dark:text-orange-100">
+                                <a href="index.html">Hasil</a>
+                            </span>
+
+                            <span
+                                class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600 dark:bg-purple-600 dark:text-purple-100">
+                                HTML
+                            </span>
+
+                            <span
+                                class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600 dark:bg-purple-600 dark:text-purple-100">
+                                Bootstrap
+                            </span>
+                        </div>
+                    </div>
+                </article>
+
+                <article
+                    class="hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-xs hover:[animation-duration:_4s] grow dark:shadow-gray-700/25">
+                    <div class="rounded-[10px] bg-white p-4 !pt-20 sm:p-6 dark:bg-gray-900">
+                        <time datetime="2022-10-10" class="block text-xs text-gray-500 dark:text-gray-400"> Dea Afrizal
+                        </time>
+
+                        <h3 class="mt-0.5 text-lg font-medium text-gray-900 dark:text-white">
+                            <a href="//www.youtube.com/watch?v=vQeJIa-ZYm4&list=PLc6SEcJkQ6DzVY6THm3prtUU6HKMqpZSH">Sesi
+                                4 -
+                                Semester 1 Cuy University</a>
+                        </h3>
+
+                        <div class="mt-4 flex flex-wrap gap-1">
+                            <span
+                                class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-orange-600 dark:bg-yellow-600 dark:text-orange-100">
+                                <a href="index4.html">Hasil</a>
+                            </span>
+
+                            <span
+                                class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600 dark:bg-purple-600 dark:text-purple-100">
+                                HTML
+                            </span>
+
+                            <span
+                                class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600 dark:bg-purple-600 dark:text-purple-100">
+                                CSS
+                            </span>
+
+                            <span
+                                class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600 dark:bg-purple-600 dark:text-purple-100">
+                                JavaScript
+                            </span>
+
+                            <span
+                                class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600 dark:bg-purple-600 dark:text-purple-100">
+                                Tailwind
+                            </span>
+
+                            <span
+                                class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600 dark:bg-purple-600 dark:text-purple-100">
+                                Flowbite
+                            </span>
+                        </div>
+                    </div>
+                </article>
+
+                <article
+                    class="hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-xs hover:[animation-duration:_4s] grow dark:shadow-gray-700/25">
+                    <div class="rounded-[10px] bg-white p-4 !pt-20 sm:p-6 dark:bg-gray-900">
+                        <time datetime="2022-10-10" class="block text-xs text-gray-500 dark:text-gray-400"> Dea Afrizal
+                        </time>
+
+                        <h3 class="mt-0.5 text-lg font-medium text-gray-900 dark:text-white">
+                            <a href="//www.youtube.com/watch?v=QUpyv31Nyso&list=PLc6SEcJkQ6DzVY6THm3prtUU6HKMqpZSH">Sesi
+                                5 -
+                                Semester 1 Cuy University</a>
+                        </h3>
+
+                        <div class="mt-4 flex flex-wrap gap-1">
+                            <span
+                                class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-orange-600 dark:bg-yellow-600 dark:text-orange-100">
+                                <a href="index5.html">Hasil</a>
+                            </span>
+
+                            <span
+                                class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600 dark:bg-purple-600 dark:text-purple-100">
+                                HTML
+                            </span>
+
+                            <span
+                                class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600 dark:bg-purple-600 dark:text-purple-100">
+                                CSS
+                            </span>
+
+                            <span
+                                class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600 dark:bg-purple-600 dark:text-purple-100">
+                                JavaScript
+                            </span>
+                        </div>
+                    </div>
+                </article>
+
+                <article
+                    class="hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-xs hover:[animation-duration:_4s] grow dark:shadow-gray-700/25">
+                    <div class="rounded-[10px] bg-white p-4 !pt-20 sm:p-6 dark:bg-gray-900">
+                        <time datetime="2022-10-10" class="block text-xs text-gray-500 dark:text-gray-400"> Dea Afrizal
+                        </time>
+
+                        <h3 class="mt-0.5 text-lg font-medium text-gray-900 dark:text-white">
+                            <a href="//www.youtube.com/watch?v=QIpWKTHKcqM&list=PLc6SEcJkQ6DzVY6THm3prtUU6HKMqpZSH">Sesi
+                                6 -
+                                Semester 1 Cuy University</a>
+                        </h3>
+
+                        <div class="mt-4 flex flex-wrap gap-1">
+                            <span
+                                class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600 dark:bg-purple-600 dark:text-purple-100">
+                                HTML
+                            </span>
+
+                            <span
+                                class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600 dark:bg-purple-600 dark:text-purple-100">
+                                CSS
+                            </span>
+
+                            <span
+                                class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600 dark:bg-purple-600 dark:text-purple-100">
+                                JavaScript
+                            </span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <span class="flex items-center mt-4 ml-4">
+                <span class="pr-6 dark:text-white">Projek Gabut</span>
+                <span class="h-px flex-1 bg-black dark:bg-white"></span>
+            </span>
+
+            <article
+                class="flex bg-white transition hover:shadow-xl mt-4 ml-4 mr-4 rounded-xl dark:bg-gray-900 dark:shadow-gray-800/25">
+                <div class="rotate-180 p-2 [writing-mode:_vertical-lr]">
+                    <p
+                        class="flex items-center justify-center gap-4 text-xs font-bold uppercase text-gray-900 dark:text-white">
+                        Github</p>
+
+                    <!-- <time datetime="2022-10-10"
+                        class="flex items-center justify-between gap-4 text-xs font-bold uppercase text-gray-900">
+                        <span>2022</span>
+                        <span class="w-px flex-1 bg-gray-900/10"></span>
+                        <span>Oct 10</span>
+                    </time> -->
+                </div>
+
+                <div class="hidden sm:block sm:basis-56">
+                    <img alt="" src="//gcore.jsdelivr.net/gh/Atlas-OS/branding@main/banners/banner-v3.png"
+                        class="aspect-square h-full w-full object-cover" />
+                </div>
+
+                <div class="flex flex-1 flex-col justify-between">
+                    <div class="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6 dark:border-white/10">
+                        <a href="//github.com/GaJe48/Atlas">
+                            <h3 class="font-bold uppercase text-gray-900 dark:text-white">
+                                Atlas Fork
+                            </h3>
+                        </a>
+
+                        <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-700 dark:text-gray-200">
+                            🚀 An open and lightweight modification to Windows, designed to optimize performance,
+                            privacy
+                            and
+                            usability.
                         </p>
                     </div>
+
+                    <!-- <div class="sm:flex sm:items-end sm:justify-end">
+                        <a href="#"
+                            class="block bg-yellow-300 px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-yellow-400">
+                            Read Blog
+                        </a>
+                    </div> -->
                 </div>
-
-                <div class="flex items-center gap-4">
-                    <button
-                        class="inline-flex items-center justify-center gap-1.5 rounded-sm border border-gray-200 bg-white px-5 py-3 text-gray-900 transition hover:text-gray-700 focus:ring-3 focus:outline-hidden"
-                        type="button">
-                        <span class="text-sm font-medium">
-                            <a href="//github.com/GaJe48">Guthib Gw</a>
-                        </span>
-
-                        <img src="//upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/160px-GitHub_Invertocat_Logo.svg.png"
-                            class="size-6">
-
-                        <!-- <svg xmlns="http://www.w3.org/2000/svg" class="size-4" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                        </svg> -->
-                    </button>
-
-                    <button
-                        class="inline-flex items-center justify-center gap-1.5 rounded-sm bg-indigo-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:ring-3 focus:outline-hidden"
-                        type="button">
-                        <a href="//facebook.com/groups/programmerhandal">Fesnuk IMPHEN</a>
-
-                        <img src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/50px-2023_Facebook_icon.svg.png"
-                            class="size-6">
-                    </button>
-                </div>
-            </div>
+            </article>
         </div>
-    </header>
-
-    <span class="flex items-center mt-4">
-        <span class="h-px flex-1 bg-black"></span>
-        <span class="shrink-0 px-6">Barang Siapa, Barang Guweh</span>
-        <span class="h-px flex-1 bg-black"></span>
-    </span>
-
-    <div class="flex flex-row flex-wrap gap-4 justify-center mt-4 ml-4 mr-4">
-        <article
-            class="hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-xs hover:[animation-duration:_4s] grow">
-            <div class="rounded-[10px] bg-white p-4 !pt-20 sm:p-6">
-                <time datetime="2022-10-10" class="block text-xs text-gray-500"> Web Programming UNPAS </time>
-
-                <h3 class="mt-0.5 text-lg font-medium text-gray-900">
-                    <a href="//www.youtube.com/playlist?list=PLFIM0718LjIVuONHysfOK0ZtiqUWvrx4F">HTML Dasar - 13
-                        Part</a>
-                    </a>
-
-                    <div class="mt-4 flex flex-wrap gap-1">
-                        <span
-                            class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-orange-600">
-                            <a href="index1.html">Hasil</a>
-                        </span>
-
-                        <span
-                            class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600">
-                            HTML
-                        </span>
-                    </div>
-            </div>
-        </article>
-
-        <article
-            class="hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-xs hover:[animation-duration:_4s] grow">
-            <div class="rounded-[10px] bg-white p-4 !pt-20 sm:p-6">
-                <time datetime="2022-10-10" class="block text-xs text-gray-500"> Dea Afrizal </time>
-
-                <h3 class="mt-0.5 text-lg font-medium text-gray-900">
-                    <a href="//www.youtube.com/watch?v=71a2zeC71gk&list=PLc6SEcJkQ6DzVY6THm3prtUU6HKMqpZSH">Sesi 1 -
-                        Semester 1 Cuy University</a>
-                </h3>
-
-                <div class="mt-4 flex flex-wrap gap-1">
-                    <span class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-orange-600">
-                        <a href="index2.html">Hasil</a>
-                    </span>
-
-                    <span class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600">
-                        HTML
-                    </span>
-
-                    <span class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600">
-                        CSS
-                    </span>
-                </div>
-            </div>
-        </article>
-
-        <article
-            class="hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-xs hover:[animation-duration:_4s] grow">
-            <div class="rounded-[10px] bg-white p-4 !pt-20 sm:p-6">
-                <time datetime="2022-10-10" class="block text-xs text-gray-500"> Dea Afrizal </time>
-
-                <h3 class="mt-0.5 text-lg font-medium text-gray-900">
-                    <a href="//www.youtube.com/watch?v=Mb6Np6QURDY&list=PLc6SEcJkQ6DzVY6THm3prtUU6HKMqpZSH">Sesi 2 -
-                        Semester 1 Cuy University</a>
-                </h3>
-
-                <div class="mt-4 flex flex-wrap gap-1">
-                    <span class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600">
-                        HTML
-                    </span>
-
-                    <span class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600">
-                        CSS
-                    </span>
-
-                    <span class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600">
-                        JavaScript
-                    </span>
-                </div>
-            </div>
-        </article>
-
-        <article
-            class="hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-xs hover:[animation-duration:_4s] grow">
-            <div class="rounded-[10px] bg-white p-4 !pt-20 sm:p-6">
-                <time datetime="2022-10-10" class="block text-xs text-gray-500"> Dea Afrizal </time>
-
-                <h3 class="mt-0.5 text-lg font-medium text-gray-900">
-                    <a href="//www.youtube.com/watch?v=igwNyjc7Ii8&list=PLc6SEcJkQ6DzVY6THm3prtUU6HKMqpZSH">Sesi 3 -
-                        Semester 1 Cuy University</a>
-                </h3>
-
-                <div class="mt-4 flex flex-wrap gap-1">
-                    <span class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-orange-600">
-                        <a href="index.html">Hasil</a>
-                    </span>
-
-                    <span class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600">
-                        HTML
-                    </span>
-
-                    <span class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600">
-                        Bootstrap
-                    </span>
-                </div>
-            </div>
-        </article>
-
-        <article
-            class="hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-xs hover:[animation-duration:_4s] grow">
-            <div class="rounded-[10px] bg-white p-4 !pt-20 sm:p-6">
-                <time datetime="2022-10-10" class="block text-xs text-gray-500"> Dea Afrizal </time>
-
-                <h3 class="mt-0.5 text-lg font-medium text-gray-900">
-                    <a href="//www.youtube.com/watch?v=vQeJIa-ZYm4&list=PLc6SEcJkQ6DzVY6THm3prtUU6HKMqpZSH">Sesi 4 -
-                        Semester 1 Cuy University</a>
-                </h3>
-
-                <div class="mt-4 flex flex-wrap gap-1">
-                    <span class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-orange-600">
-                        <a href="index4.html">Hasil</a>
-                    </span>
-
-                    <span class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600">
-                        HTML
-                    </span>
-
-                    <span class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600">
-                        CSS
-                    </span>
-
-                    <span class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600">
-                        JavaScript
-                    </span>
-
-                    <span class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600">
-                        Tailwind
-                    </span>
-
-                    <span class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600">
-                        Flowbite
-                    </span>
-                </div>
-            </div>
-        </article>
-
-        <article
-            class="hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-xs hover:[animation-duration:_4s] grow">
-            <div class="rounded-[10px] bg-white p-4 !pt-20 sm:p-6">
-                <time datetime="2022-10-10" class="block text-xs text-gray-500"> Dea Afrizal </time>
-
-                <h3 class="mt-0.5 text-lg font-medium text-gray-900">
-                    <a href="//www.youtube.com/watch?v=QUpyv31Nyso&list=PLc6SEcJkQ6DzVY6THm3prtUU6HKMqpZSH">Sesi 5 -
-                        Semester 1 Cuy University</a>
-                </h3>
-
-                <div class="mt-4 flex flex-wrap gap-1">
-                    <span class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-orange-600">
-                        <a href="index5.html">Hasil</a>
-                    </span>
-
-                    <span class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600">
-                        HTML
-                    </span>
-
-                    <span class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600">
-                        CSS
-                    </span>
-
-                    <span class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600">
-                        JavaScript
-                    </span>
-                </div>
-            </div>
-        </article>
-
-        <article
-            class="hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-xs hover:[animation-duration:_4s] grow">
-            <div class="rounded-[10px] bg-white p-4 !pt-20 sm:p-6">
-                <time datetime="2022-10-10" class="block text-xs text-gray-500"> Dea Afrizal </time>
-
-                <h3 class="mt-0.5 text-lg font-medium text-gray-900">
-                    <a href="//www.youtube.com/watch?v=QIpWKTHKcqM&list=PLc6SEcJkQ6DzVY6THm3prtUU6HKMqpZSH">Sesi 6 -
-                        Semester 1 Cuy University</a>
-                </h3>
-
-                <div class="mt-4 flex flex-wrap gap-1">
-                    <span class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600">
-                        HTML
-                    </span>
-
-                    <span class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600">
-                        CSS
-                    </span>
-
-                    <span class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600">
-                        JavaScript
-                    </span>
-                </div>
-            </div>
-        </article>
     </div>
 
-    <span class="flex items-center mt-4 ml-4">
-        <span class="pr-6">Projek Iseng</span>
-        <span class="h-px flex-1 bg-black"></span>
-    </span>
+    <script>
+        let body = document.documentElement
 
-    <article class="flex bg-white transition hover:shadow-xl mt-4 ml-4 mr-4 rounded-xl">
-        <div class="rotate-180 p-2 [writing-mode:_vertical-lr]">
-            <p class="flex items-center justify-center gap-4 text-xs font-bold uppercase text-gray-900">Github</p>
+        if (localStorage.getItem('theme') == 'dark') {
+            body.classList.add('dark')
+        } else {
+            localStorage.clear()
+        }
 
-            <!-- <time datetime="2022-10-10"
-                class="flex items-center justify-between gap-4 text-xs font-bold uppercase text-gray-900">
-                <span>2022</span>
-                <span class="w-px flex-1 bg-gray-900/10"></span>
-                <span>Oct 10</span>
-            </time> -->
-        </div>
+        function darkMode() {
+            body.classList.toggle('dark')
 
-        <div class="hidden sm:block sm:basis-56">
-            <img alt="" src="//gcore.jsdelivr.net/gh/Atlas-OS/branding@main/banners/banner-v3.png"
-                class="aspect-square h-full w-full object-cover" />
-        </div>
-
-        <div class="flex flex-1 flex-col justify-between">
-            <div class="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
-                <a href="//github.com/GaJe48/Atlas">
-                    <h3 class="font-bold uppercase text-gray-900">
-                        Atlas Fork
-                    </h3>
-                </a>
-
-                <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-700">
-                    🚀 An open and lightweight modification to Windows, designed to optimize performance, privacy and
-                    usability.
-                </p>
-            </div>
-
-            <!-- <div class="sm:flex sm:items-end sm:justify-end">
-                <a href="#"
-                    class="block bg-yellow-300 px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-yellow-400">
-                    Read Blog
-                </a>
-            </div> -->
-        </div>
-    </article>
+            if (body.classList == 'dark') {
+                localStorage.setItem('theme', 'dark')
+            } else {
+                localStorage.clear()
+            }
+        }
+    </script>
 </body>
 
 </html>
