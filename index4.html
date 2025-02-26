@@ -12,7 +12,7 @@
 <body>
     <div class="bg-black h-screen content-center">
         <div class="flex justify-center">
-            <img src="off.gif" id="lampu" class="sm:w-100 w-80">
+            <img src="assets/off.gif" id="lampu" class="sm:w-100 w-80">
         </div>
 
         <div class="flex justify-center mt-4">
@@ -37,14 +37,14 @@
             let btn = document.getElementById('btn')
             let togel = document.getElementById('togel')
 
-            if (lampu.src.includes('off.gif')) {
-                lampu.src = 'on.gif'
+            if (lampu.src.includes('assets/off.gif')) {
+                lampu.src = 'assets/on.gif'
                 btn.textContent = 'OFF'
                 btn.className = 'text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center'
                 togel.checked = true
 
             } else {
-                lampu.src = 'off.gif'
+                lampu.src = 'assets/off.gif'
                 btn.textContent = 'ON'
                 btn.className = 'text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center'
                 togel.checked = false
