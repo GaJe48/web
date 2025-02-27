@@ -6,16 +6,26 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Tempat Gabut</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src='//unpkg.com/@tailwindcss/browser@4'></script>
     <style type="text/tailwindcss">
+        body {
+        overflow: -moz-scrollbars-none;
+        -ms-overflow-style: none;
+        }
+
+        body::-webkit-scrollbar {
+        display: none;
+        }
+
         @custom-variant dark (&:where(.dark, .dark *));
-      </style>
+    </style>
 </head>
 
 <body>
     <div class="h-screen dark:bg-gray-800">
         <div class="h-auto pb-10 dark:bg-gray-800">
-            <header class="bg-white drop-shadow-xl dark:bg-gray-900">
+            <header class="bg-white drop-shadow-xl dark:bg-gray-900 animate__animated animate__fadeInDown">
                 <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
                     <div class="flex flex-col items-center gap-4 md:flex-row md:items-center md:justify-between">
                         <div class="flex flex-row">
@@ -62,13 +72,13 @@
                 </div>
             </header>
 
-            <span class="flex items-center mt-4">
+            <span class="flex items-center mt-4 animate__animated animate__fadeInDown">
                 <span class="h-px flex-1 bg-black dark:bg-white"></span>
                 <span class="shrink-0 px-6 dark:text-white">Barang Siapa, Barang Guweh</span>
                 <span class="h-px flex-1 bg-black dark:bg-white"></span>
             </span>
 
-            <div class="flex flex-row flex-wrap gap-4 justify-center mt-4 ml-4 mr-4">
+            <div class="flex flex-row flex-wrap gap-4 mt-4 ml-4 mr-4 animate__animated animate__fadeIn animate__slow">
                 <article
                     class="hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-xs hover:[animation-duration:_4s] grow dark:shadow-gray-700/25">
                     <div class="rounded-[10px] bg-white p-4 !pt-20 sm:p-6 dark:bg-gray-900">
@@ -170,11 +180,6 @@
                         </h3>
 
                         <div class="mt-4 flex flex-wrap gap-1">
-                            <span
-                                class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-orange-600 dark:bg-yellow-600 dark:text-orange-100">
-                                <a href="index.html">Hasil</a>
-                            </span>
-
                             <span
                                 class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600 dark:bg-purple-600 dark:text-purple-100">
                                 HTML
@@ -367,15 +372,98 @@
                         </div>
                     </div>
                 </article>
+
+                <article
+                    class="hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-xs hover:[animation-duration:_4s] grow dark:shadow-gray-700/25">
+                    <div class="rounded-[10px] bg-white p-4 !pt-20 sm:p-6 dark:bg-gray-900">
+                        <time datetime="2022-10-10" class="block text-xs text-gray-500 dark:text-gray-400"> Dea Afrizal
+                        </time>
+
+                        <h3 class="mt-0.5 text-lg font-medium text-gray-900 dark:text-white">
+                            <a href="//www.youtube.com/watch?v=4ZHSZ4bz_pE&list=PLc6SEcJkQ6DwIfhXhH52cL0fI33_yQVNo">Sesi
+                                1 -
+                                Semester 2 Cuy University</a>
+                        </h3>
+
+                        <div class="mt-4 flex flex-wrap gap-1">
+                            <span
+                                class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600 dark:bg-purple-600 dark:text-purple-100">
+                                HTML
+                            </span>
+
+                            <span
+                                class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600 dark:bg-purple-600 dark:text-purple-100">
+                                CSS
+                            </span>
+                        </div>
+                    </div>
+                </article>
+
+                <article
+                    class="hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-xs hover:[animation-duration:_4s] grow dark:shadow-gray-700/25">
+                    <div class="rounded-[10px] bg-white p-4 !pt-20 sm:p-6 dark:bg-gray-900">
+                        <time datetime="2022-10-10" class="block text-xs text-gray-500 dark:text-gray-400"> Dea Afrizal
+                        </time>
+
+                        <h3 class="mt-0.5 text-lg font-medium text-gray-900 dark:text-white">
+                            <a href="//www.youtube.com/watch?v=Ed7i0we-V3g&list=PLc6SEcJkQ6DwIfhXhH52cL0fI33_yQVNo">Sesi
+                                2 -
+                                Semester 2 Cuy University</a>
+                        </h3>
+
+                        <div class="mt-4 flex flex-wrap gap-1">
+                            <span
+                                class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600 dark:bg-purple-600 dark:text-purple-100">
+                                HTML
+                            </span>
+
+                            <span
+                                class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600 dark:bg-purple-600 dark:text-purple-100">
+                                CSS
+                            </span>
+                        </div>
+                    </div>
+                </article>
+
+                <article
+                    class="hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-xs hover:[animation-duration:_4s] grow dark:shadow-gray-700/25">
+                    <div class="rounded-[10px] bg-white p-4 !pt-20 sm:p-6 dark:bg-gray-900">
+                        <time datetime="2022-10-10" class="block text-xs text-gray-500 dark:text-gray-400"> Dea Afrizal
+                        </time>
+
+                        <h3 class="mt-0.5 text-lg font-medium text-gray-900 dark:text-white">
+                            <a href="//www.youtube.com/watch?v=Ed7i0we-V3g&list=PLc6SEcJkQ6DwIfhXhH52cL0fI33_yQVNo">Sesi
+                                3 -
+                                Semester 2 Cuy University</a>
+                        </h3>
+
+                        <div class="mt-4 flex flex-wrap gap-1">
+                            <span
+                                class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600 dark:bg-purple-600 dark:text-purple-100">
+                                HTML
+                            </span>
+
+                            <span
+                                class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600 dark:bg-purple-600 dark:text-purple-100">
+                                CSS
+                            </span>
+
+                            <span
+                                class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600 dark:bg-purple-600 dark:text-purple-100">
+                                JavaScript
+                            </span>
+                        </div>
+                    </div>
+                </article>
             </div>
 
-            <span class="flex items-center mt-4 ml-4">
+            <span class="flex items-center mt-4 ml-4 animate__animated animate__fadeInRight">
                 <span class="pr-6 dark:text-white">Projek Gabut</span>
                 <span class="h-px flex-1 bg-black dark:bg-white"></span>
             </span>
 
             <article
-                class="flex bg-white transition hover:shadow-xl mt-4 ml-4 mr-4 rounded-xl dark:bg-gray-900 dark:shadow-gray-800/25">
+                class="flex bg-white transition hover:shadow-xl mt-4 ml-4 mr-4 rounded-xl dark:bg-gray-900 dark:shadow-gray-800/25 animate__animated animate__fadeInUp">
                 <div class="rotate-180 p-2 [writing-mode:_vertical-lr]">
                     <p
                         class="flex items-center justify-center gap-4 text-xs font-bold uppercase text-gray-900 dark:text-white">
