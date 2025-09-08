@@ -1,16 +1,15 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+name: Cleanup Actions History
 
 on:
-  # Runs on pushes targeting the default branch
   push:
-    branches: ["master"]
+    branches:
+      - master
 
 jobs:
   delete-workflow:
     runs-on: ubuntu-latest
     permissions:
-      actions: write  # Diperlukan untuk menghapus workflow
+      actions: write
     steps:
       - name: Delete Old Workflow Runs via API
         run: |

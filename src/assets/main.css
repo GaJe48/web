@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+@import 'animate.css';
+
+body {
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));

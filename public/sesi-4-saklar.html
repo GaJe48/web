@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Sesi 4 - Semester 1 Cuy University</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="//unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body>
+    <div class="h-screen content-center bg-black">
+      <div class="flex justify-center">
+        <img src="off.gif" id="lampu" class="w-80 sm:w-100" />
+      </div>
+
+      <div class="mt-4 flex justify-center">
+        <button
+          type="button"
+          class="rounded-lg bg-gradient-to-r from-green-400 via-green-500 to-green-600 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gradient-to-br"
+          id="btn"
+          onclick="saklar()"
+        >
+          ON
+        </button>
+      </div>
+
+      <div class="mt-4 flex justify-center">
+        <label class="inline-flex cursor-pointer items-center">
+          <input type="checkbox" value="" class="peer sr-only" id="togel" onchange="saklar()" />
+          <div
+            class="peer relative h-6 w-11 rounded-full bg-gray-200 peer-checked:bg-green-600 after:absolute after:start-[2px] after:top-0.5 after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white rtl:peer-checked:after:-translate-x-full dark:border-gray-600 dark:bg-red-600 dark:peer-checked:bg-green-600"
+          ></div>
+        </label>
+      </div>
+    </div>
+
+    <script>
+      function saklar() {
+        let lampu = document.getElementById('lampu')
+        let btn = document.getElementById('btn')
+        let togel = document.getElementById('togel')
+
+        if (lampu.src.includes('off.gif')) {
+          lampu.src = 'on.gif'
+          btn.textContent = 'OFF'
+          btn.className =
+            'text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center'
+          togel.checked = true
+        } else {
+          lampu.src = 'off.gif'
+          btn.textContent = 'ON'
+          btn.className =
+            'text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center'
+          togel.checked = false
+        }
+      }
+    </script>
+  </body>
+</html>

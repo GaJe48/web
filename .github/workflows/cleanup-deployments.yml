@@ -1,0 +1,34 @@
+name: Cleanup Deployments
+
+on:
+  push:
+    branches:
+      - master
+
+permissions:
+  deployments: write
+
+jobs:
+  delete-deployments:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delete Deployment History
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "Fetching deployments..."
+          deployments=$(gh api "repos/${{ github.repository }}/deployments" --jq '.[].id')
+
+          if [ -z "$deployments" ]; then
+            echo "No deployments found."
+            exit 0
+          fi
+
+          for id in $deployments; do
+            echo "Deleting deployment ID: $id"
+            # Mark as inactive first (required for some states) usually not strictly needed for DELETE but good practice if DELETE fails on active ones.
+            # But straightforward DELETE usually works for history cleanup.
+            gh api "repos/${{ github.repository }}/deployments/$id" -X DELETE || echo "Failed to delete $id"
+          done
+
+          echo "Cleanup complete."
